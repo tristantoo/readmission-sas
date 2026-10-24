@@ -1,0 +1,17 @@
+[project]
+name = "readmission-sas"
+version = "0.1.0"
+description = "SAS port of the CMS DE-SynPUF 30-day readmission mart and model, with a self-checking parity run"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=3.0.6",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
